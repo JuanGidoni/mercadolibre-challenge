@@ -1,0 +1,995 @@
+{
+  "title": "Ofertas",
+  "subtitle": "¡Encontrá precios increíbles cada día!",
+  "fonts": [
+    "https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-light.woff2",
+    "https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-regular.woff2",
+    "https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-semibold.woff2"
+  ],
+  "header": {
+    "logo": "https://http2.mlstatic.com/frontend-assets/ui-navigation/5.11.0/mercadolibre/logo__large_plus@2x.png",
+    "search": "Buscar productos, marcas y más...",
+    "links": [
+      "Ofertas",
+      "Historial",
+      "Supermercado",
+      "Tiendas oficiales",
+      "Vender",
+      "Ayuda"
+    ],
+    "profile": "Mi cuenta",
+    "ad_image": "https://http2.mlstatic.com/resources/deals/exhibitors_resources/mla-menu-desktop-notification-picture-e6c46c2b-5591-4b43-94e4-a48dbbefaed7.png"
+  },
+  "shortcuts": [
+    {
+      "image_src": "https://http2.mlstatic.com/storage/splinter-admin/1583341146061-todas-las-ofertas@3x.png",
+      "name": "Todas las ofertas",
+      "filter": {
+        "domain_id": ""
+      },
+      "isDefault": true,
+      "fixedPosition": true
+    },
+    {
+      "image_src": "https://http2.mlstatic.com/storage/splinter-admin/1585847817557-speaker@3x.png",
+      "name": "Parlantes",
+      "filter": {
+        "domain_id": "MLA-SPEAKERS"
+      },
+      "isRecommendedDomain": true
+    },
+    {
+      "image_src": "https://http2.mlstatic.com/storage/splinter-admin/1592947702168-herramientas@3x.png",
+      "filter": {
+        "domain_id": "MLA-WELDING_MACHINES$MLA-TOOLS$MLA-WELDING_BLOWTORCHES$MLA-WELDING_RODS$MLA-DRILLS_SCREWDRIVERS$MLA-ELECTRIC_DRILLS$MLA-DRILL_BITS$MLA-POWER_GRINDERS$MLA-COMBINED_TOOL_SETS$MLA-ELECTRIC_CIRCULAR_SAWS$MLA-TOOL_ACCESSORIES_AND_SPARES$MLA-WRENCHES$MLA-WRENCH_SETS"
+      },
+      "name": "Herramientas",
+      "isRecommendedDomain": true
+    },
+    {
+      "image_src": "https://http2.mlstatic.com/storage/splinter-admin/1583354134276-notebooks@3x.png",
+      "filter": {
+        "domain_id": "MLA-NOTEBOOKS"
+      },
+      "name": "Notebooks",
+      "isRecommendedDomain": true
+    },
+    {
+      "image_src": "https://http2.mlstatic.com/storage/splinter-admin/1583341349527-celulares@3x.png",
+      "filter": {
+        "domain_id": "MLA-CELLPHONES"
+      },
+      "name": "Celulares",
+      "isRecommendedDomain": true
+    },
+    {
+      "image_src": "https://http2.mlstatic.com/storage/splinter-admin/1583354080423-zapatillas@3x.png",
+      "name": "Zapatillas",
+      "filter": {
+        "domain_id": "MLA-SNEAKERS"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "MLA885018383",
+      "title": "Nokia 23 M 32gb 2gb - Exclusivo Mercado Libre",
+      "image_src": "http://http2.mlstatic.com/D_677725-MLA43953776684_102020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-885018383-nokia-23-m-32gb-2gb-exclusivo-mercado-libre-_JM?variation=66536334371&hide_psmb=true#reco_item_pos=0&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "14.999",
+        "original_price": "19.999",
+        "discount": 25,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA896874578",
+      "title": "Smart Tv Led Noblex 43 Full Hd Dm43x7100 Hdmi Gtia Oficial",
+      "image_src": "http://http2.mlstatic.com/D_899771-MLA44073517291_112020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-896874578-smart-tv-led-noblex-43-full-hd-dm43x7100-hdmi-gtia-oficial-_JM?hide_psmb=true#reco_item_pos=1&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "29.999",
+        "original_price": "37.198",
+        "discount": 19,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA693507079",
+      "title": "Cama Elastica 2.44 Metros Femmto 120 Kg Con Red Protectora",
+      "image_src": "http://http2.mlstatic.com/D_873255-MLA42964742464_072020-I.jpg",
+      "free_shipping": false,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-693507079-cama-elastica-244-metros-femmto-120-kg-con-red-protectora-_JM?variation=28514215092&hide_psmb=true#reco_item_pos=2&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "17.999",
+        "original_price": "24.999",
+        "discount": 28,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA827796491",
+      "title": "Cama Elastica 2,44 Metros Oferta Red Niño Adulto En 6 Cuotas",
+      "image_src": "http://http2.mlstatic.com/D_871408-MLA44059119855_112020-I.jpg",
+      "free_shipping": false,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-827796491-cama-elastica-244-metros-oferta-red-nino-adulto-en-6-cuotas-_JM?variation=67568195862&hide_psmb=true#reco_item_pos=3&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "18.654",
+        "original_price": "28.999",
+        "discount": 35,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA765224920",
+      "title": "Membrana Liquida Premium 20 Kg Techos Elástica Oferta !!",
+      "image_src": "http://http2.mlstatic.com/D_821416-MLA43693921315_102020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-765224920-membrana-liquida-premium-20-kg-techos-elastica-oferta--_JM?hide_psmb=true#reco_item_pos=4&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "2.699",
+        "original_price": "3.749",
+        "discount": 28,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA874332336",
+      "title": "Notebook I5 8gb Ram Disco Ssd 480gb Enova Windows Cuotas",
+      "image_src": "http://http2.mlstatic.com/D_927634-MLA43345721439_092020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-874332336-notebook-i5-8gb-ram-disco-ssd-480gb-enova-windows-cuotas-_JM?variation=62293258874&hide_psmb=true#reco_item_pos=5&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "93.500",
+        "original_price": "99.000",
+        "discount": 5,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA884153737",
+      "title": "Samsung Galaxy A11 64 Gb Negro 3 Gb Ram",
+      "image_src": "http://http2.mlstatic.com/D_766371-MLA43338098512_092020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-884153737-samsung-galaxy-a11-64-gb-negro-3-gb-ram-_JM?hide_psmb=true#reco_item_pos=6&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "21.999",
+        "original_price": "23.999",
+        "discount": 8,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA858496839",
+      "title": "Termómetro Infrarrojo Digital Láser A Distancia Anmat Simela",
+      "image_src": "http://http2.mlstatic.com/D_782700-MLA44062938070_112020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-858496839-termometro-infrarrojo-digital-laser-a-distancia-anmat-simela-_JM?variation=58503900089&hide_psmb=true#reco_item_pos=7&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "1.960",
+        "original_price": "2.800",
+        "discount": 30,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA876136615",
+      "title": "Smart Tv Noblex Dj32x5000 Led Hd 32 ",
+      "image_src": "http://http2.mlstatic.com/D_717601-MLA32070794378_092019-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-876136615-smart-tv-noblex-dj32x5000-led-hd-32-_JM?hide_psmb=true#reco_item_pos=8&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "24.590",
+        "original_price": "32.124",
+        "discount": 23,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA842682848",
+      "title": "Ventilador Turbo Semi Industrial Exahome 50cm 20  90w Grande",
+      "image_src": "http://http2.mlstatic.com/D_773008-MLA41035914917_032020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-842682848-ventilador-turbo-semi-industrial-exahome-50cm-20-90w-grande-_JM?variation=51884423024&hide_psmb=true#reco_item_pos=9&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "4.290",
+        "original_price": "5.577",
+        "discount": 23,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA880093382",
+      "title": "Motorola One Hyper 128 Gb Deepsea Blue 4 Gb Ram",
+      "image_src": "http://http2.mlstatic.com/D_680323-MLA40658520425_022020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-880093382-motorola-one-hyper-128-gb-deepsea-blue-4-gb-ram-_JM?hide_psmb=true#reco_item_pos=10&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "36.999",
+        "discount": null,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA899085570",
+      "title": "Heladera Atma Hct4103  Blanca Con Freezer 285l 220v",
+      "image_src": "http://http2.mlstatic.com/D_622015-MLA43613523835_092020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-899085570-heladera-atma-hct4103-blanca-con-freezer-285l-220v-_JM?hide_psmb=true#reco_item_pos=11&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "45.999",
+        "original_price": "61.999",
+        "discount": 25,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA683281721",
+      "title": "Remera Lisa Sublimar Modal Spun Niños T 2 Al 18 Pack X 12!",
+      "image_src": "http://http2.mlstatic.com/D_886135-MLA43417246268_092020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-683281721-remera-lisa-sublimar-modal-spun-ninos-t-2-al-18-pack-x-12-_JM?hide_psmb=true#reco_item_pos=12&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "2.260",
+        "original_price": "2.760",
+        "discount": 18,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA877971790",
+      "title": "Juego De Sábanas Arredo Queen Size Hojas Curvas  Ocre",
+      "image_src": "http://http2.mlstatic.com/D_912232-MLA43559684495_092020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-877971790-juego-de-sabanas-arredo-queen-size-hojas-curvas-ocre-_JM?variation=63754181960&hide_psmb=true#reco_item_pos=13&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "2.399",
+        "original_price": "3.999",
+        "discount": 40,
+        "currency": "$",
+        "decimals": "40",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA834982673",
+      "title": "Desmalezadora Motoguadaña 52cc Cuchilla Tanza Arnes Bordeado",
+      "image_src": "http://http2.mlstatic.com/D_726492-MLA43171634869_082020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-834982673-desmalezadora-motoguadana-52cc-cuchilla-tanza-arnes-bordeado-_JM?hide_psmb=true#reco_item_pos=14&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "9.199",
+        "original_price": "13.399",
+        "discount": 31,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA847675005",
+      "title": " Google Chromecast 3rd Generation  Full Hd 2gb Carbón Con Memoria Ram De 512mb",
+      "image_src": "http://http2.mlstatic.com/D_620605-MLA32691559317_102019-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-847675005-google-chromecast-3rd-generation-full-hd-2gb-carbon-con-memoria-ram-de-512mb-_JM?hide_psmb=true#reco_item_pos=15&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "5.330",
+        "discount": null,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA871248547",
+      "title": "Auriculares Inalámbricos Xiaomi Haylou Gt1 Plus Black",
+      "image_src": "http://http2.mlstatic.com/D_655994-MLA41052895125_032020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-871248547-auriculares-inalambricos-xiaomi-haylou-gt1-plus-black-_JM?hide_psmb=true#reco_item_pos=16&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "3.228",
+        "original_price": "3.399",
+        "discount": 5,
+        "currency": "$",
+        "decimals": "05",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA774118021",
+      "title": "Cochecito Mega Baby Cuna Paseo Bebe Lanin Convertible ",
+      "image_src": "http://http2.mlstatic.com/D_966638-MLA43406179944_092020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-774118021-cochecito-mega-baby-cuna-paseo-bebe-lanin-convertible-_JM?variation=63580463570&hide_psmb=true#reco_item_pos=17&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "11.821",
+        "original_price": "15.990",
+        "discount": 26,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA864027149",
+      "title": "Cocina Industrial Morelli 16045  550 Acero Inoxidable Lh",
+      "image_src": "http://http2.mlstatic.com/D_853907-MLA42321345541_062020-I.jpg",
+      "free_shipping": false,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-864027149-cocina-industrial-morelli-16045-550-acero-inoxidable-lh-_JM?variation=58612727738&hide_psmb=true#reco_item_pos=18&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "30.499",
+        "original_price": "53.999",
+        "discount": 43,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA884250759",
+      "title": "Samsung Galaxy A01 Core 16 Gb Negro 1 Gb Ram",
+      "image_src": "http://http2.mlstatic.com/D_814600-MLA43772081185_102020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-884250759-samsung-galaxy-a01-core-16-gb-negro-1-gb-ram-_JM?hide_psmb=true#reco_item_pos=19&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "12.999",
+        "discount": null,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA822072477",
+      "title": "Monopatin Plegable Reforzado Premium Chicos 4 Ruedas Y Freno",
+      "image_src": "http://http2.mlstatic.com/D_998731-MLA42959836358_072020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-822072477-monopatin-plegable-reforzado-premium-chicos-4-ruedas-y-freno-_JM?variation=45497960466&hide_psmb=true#reco_item_pos=20&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "4.913",
+        "original_price": "7.200",
+        "discount": 31,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA819142437",
+      "title": "Celular Motorola Moto E6 Plus 32gb 2gb Garantía Oficial",
+      "image_src": "http://http2.mlstatic.com/D_981120-MLA32494379197_102019-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-819142437-celular-motorola-moto-e6-plus-32gb-2gb-garantia-oficial-_JM?variation=44683134139&hide_psmb=true#reco_item_pos=21&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "18.999",
+        "original_price": "29.999",
+        "discount": 36,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA867873129",
+      "title": "Disco Sólido Interno Kingston Sa400s37/240g 240gb ",
+      "image_src": "http://http2.mlstatic.com/D_971286-MLA40103563041_122019-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-867873129-disco-solido-interno-kingston-sa400s37240g-240gb-_JM?hide_psmb=true#reco_item_pos=22&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "3.249",
+        "discount": null,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA706890131",
+      "title": "Casco Bicicleta Con Visera C/ Regulacion Ventilaciones",
+      "image_src": "http://http2.mlstatic.com/D_838105-MLA31966337300_082019-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-706890131-casco-bicicleta-con-visera-c-regulacion-ventilaciones-_JM?hide_psmb=true#reco_item_pos=23&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "2.848",
+        "original_price": "4.528",
+        "discount": 37,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA882644136",
+      "title": "Samsung Libre Galaxy A11",
+      "image_src": "http://http2.mlstatic.com/D_961214-MLA43847712500_102020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-882644136-samsung-libre-galaxy-a11-_JM?variation=65476387477&hide_psmb=true#reco_item_pos=24&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "21.999",
+        "original_price": "23.999",
+        "discount": 8,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA852319875",
+      "title": "Auricular  Inalambrico Touch Digital 2020 iPhone Y Android",
+      "image_src": "http://http2.mlstatic.com/D_773243-MLA42453247573_072020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-852319875-auricular-inalambrico-touch-digital-2020-iphone-y-android-_JM?variation=54879178309&hide_psmb=true#reco_item_pos=25&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "2.375",
+        "original_price": "2.500",
+        "discount": 5,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA852207174",
+      "title": "Pintura Tizada Ultra Mate Chalked Al Agua 1 L Rust Oleum",
+      "image_src": "http://http2.mlstatic.com/D_777802-MLA41687810511_052020-I.jpg",
+      "free_shipping": false,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-852207174-pintura-tizada-ultra-mate-chalked-al-agua-1-l-rust-oleum-_JM?variation=55282602156&hide_psmb=true#reco_item_pos=26&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "1.392",
+        "original_price": "1.565",
+        "discount": 11,
+        "currency": "$",
+        "decimals": "85",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA824974106",
+      "title": "Teléfono Inalámbrico Noblex Ndt4000 Negro",
+      "image_src": "http://http2.mlstatic.com/D_996071-MLA32569310897_102019-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-824974106-telefono-inalambrico-noblex-ndt4000-negro-_JM?hide_psmb=true#reco_item_pos=27&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "3.095",
+        "original_price": "4.421",
+        "discount": 29,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA876623656",
+      "title": "Sandalias Zapatos Mujer Chatas Ojotas Urbana Liviana - Cruz",
+      "image_src": "http://http2.mlstatic.com/D_984899-MLA43521448538_092020-I.jpg",
+      "free_shipping": false,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-876623656-sandalias-zapatos-mujer-chatas-ojotas-urbana-liviana-cruz-_JM?hide_psmb=true#reco_item_pos=28&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "1.557",
+        "original_price": "1.899",
+        "discount": 18,
+        "currency": "$",
+        "decimals": "18",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA845708352",
+      "title": "Aire Acondicionado Rca Split Frío/calor 2752 Frigorías Blanco 220v Rhs3200fc",
+      "image_src": "http://http2.mlstatic.com/D_786182-MLA41008992781_032020-I.jpg",
+      "free_shipping": false,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-845708352-aire-acondicionado-rca-split-friocalor-2752-frigorias-blanco-220v-rhs3200fc-_JM?hide_psmb=true#reco_item_pos=29&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "38.888",
+        "discount": null,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA884011709",
+      "title": "Samsung Galaxy A11 64 Gb Azul 3 Gb Ram",
+      "image_src": "http://http2.mlstatic.com/D_666115-MLA43338111275_092020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-884011709-samsung-galaxy-a11-64-gb-azul-3-gb-ram-_JM?hide_psmb=true#reco_item_pos=30&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "21.999",
+        "original_price": "23.999",
+        "discount": 8,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA827964107",
+      "title": "Lavarropas Automático Drean Next 6.09 Eco  Blanco 6kg 220v",
+      "image_src": "http://http2.mlstatic.com/D_847984-MLA32507748147_102019-I.jpg",
+      "free_shipping": false,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-827964107-lavarropas-automatico-drean-next-609-eco-blanco-6kg-220v-_JM?hide_psmb=true#reco_item_pos=31&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "41.999",
+        "original_price": "48.399",
+        "discount": 13,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA835973747",
+      "title": "Auriculares Gamer Kotion Each G9000 Black Y Blue",
+      "image_src": "http://http2.mlstatic.com/D_738955-MLA40252400386_122019-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-835973747-auriculares-gamer-kotion-each-g9000-black-y-blue-_JM?hide_psmb=true#reco_item_pos=32&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "3.149",
+        "original_price": "3.499",
+        "discount": 10,
+        "currency": "$",
+        "decimals": "10",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA856099318",
+      "title": "Kit Completo Tira Luces Luz Led 5050 Rgb + Control + Fuente",
+      "image_src": "http://http2.mlstatic.com/D_878945-MLA41851680067_052020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-856099318-kit-completo-tira-luces-luz-led-5050-rgb-control-fuente-_JM?variation=56106032610&hide_psmb=true#reco_item_pos=33&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "2.640",
+        "original_price": "4.554",
+        "discount": 42,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA716625632",
+      "title": "Soporte Led Tv Lcd Smart Articulado Doble Brazo Reforzado 32 40 42 43 46 47 49 50 52 55 60 65 70 75 Pulgadas",
+      "image_src": "http://http2.mlstatic.com/D_627906-MLA31660906268_082019-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-716625632-soporte-led-tv-lcd-smart-articulado-doble-brazo-reforzado-32-40-42-43-46-47-49-50-52-55-60-65-70-75-pulgadas-_JM?variation=61467828952&hide_psmb=true#reco_item_pos=34&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "3.695",
+        "original_price": "4.399",
+        "discount": 16,
+        "currency": "$",
+        "decimals": "16",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA818566498",
+      "title": "Funda iPhone 11 11 Pro 11 Pro Max Silicone Case Microcentro",
+      "image_src": "http://http2.mlstatic.com/D_986427-MLA32471820436_102019-I.jpg",
+      "free_shipping": false,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-818566498-funda-iphone-11-11-pro-11-pro-max-silicone-case-microcentro-_JM?variation=44500727088&hide_psmb=true#reco_item_pos=35&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "1.379",
+        "original_price": "1.550",
+        "discount": 11,
+        "currency": "$",
+        "decimals": "50",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA880791228",
+      "title": "Samsung Galaxy A31 128 Gb Prism Crush White 4 Gb Ram",
+      "image_src": "http://http2.mlstatic.com/D_796755-MLA42956966780_072020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-880791228-samsung-galaxy-a31-128-gb-prism-crush-white-4-gb-ram-_JM?hide_psmb=true#reco_item_pos=36&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "31.999",
+        "original_price": "35.999",
+        "discount": 11,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA698101576",
+      "title": "Combo 6 Sillas Eames Dsw Blancas - Desillas",
+      "image_src": "http://http2.mlstatic.com/D_807728-MLA31041775793_062019-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-698101576-combo-6-sillas-eames-dsw-blancas-desillas-_JM?variation=37183271213&hide_psmb=true#reco_item_pos=37&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "17.840",
+        "original_price": "23.277",
+        "discount": 23,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA819780086",
+      "title": "Zapatillas Wmns Air Zoom Pegasus 36 Nike",
+      "image_src": "http://http2.mlstatic.com/D_648589-MLA43746385386_102020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-819780086-zapatillas-wmns-air-zoom-pegasus-36-nike-_JM?hide_psmb=true#reco_item_pos=38&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "7.299",
+        "original_price": "9.899",
+        "discount": 26,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA856047657",
+      "title": "Trapeador Mopa Spray + Repuesto De Microfibra Extra Begônia",
+      "image_src": "http://http2.mlstatic.com/D_885596-MLA41093413009_032020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-856047657-trapeador-mopa-spray-repuesto-de-microfibra-extra-begnia-_JM?hide_psmb=true#reco_item_pos=39&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "1.993",
+        "original_price": "3.398",
+        "discount": 41,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA846594676",
+      "title": "Colchón De Alta Densidad 140x190 Modelo Pop La Espumería",
+      "image_src": "http://http2.mlstatic.com/D_948314-MLA44009293125_112020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-846594676-colchon-de-alta-densidad-140x190-modelo-pop-la-espumeria-_JM?variation=53275360960&hide_psmb=true#reco_item_pos=40&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "31.109",
+        "original_price": "36.599",
+        "discount": 15,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA885115613",
+      "title": "Notebook Lenovo Ryzen 5 3500u 8gb Ssd 256gb 14' Fhd Vega 8 ",
+      "image_src": "http://http2.mlstatic.com/D_685205-MLA43846394861_102020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-885115613-notebook-lenovo-ryzen-5-3500u-8gb-ssd-256gb-14-fhd-vega-8-_JM?variation=66598795474&hide_psmb=true#reco_item_pos=41&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "86.999",
+        "original_price": "130.999",
+        "discount": 33,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA813305519",
+      "title": "Silla Tolix Reforzada X6 Varios Colores",
+      "image_src": "http://http2.mlstatic.com/D_696342-MLA32094937067_092019-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-813305519-silla-tolix-reforzada-x6-varios-colores-_JM?hide_psmb=true#reco_item_pos=42&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "26.990",
+        "original_price": "33.669",
+        "discount": 19,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA896026705",
+      "title": "Auriculares Inalámbricos Samsung Galaxy Buds+ Negro",
+      "image_src": "http://http2.mlstatic.com/D_664420-MLA43608424529_092020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-896026705-auriculares-inalambricos-samsung-galaxy-buds-negro-_JM?hide_psmb=true#reco_item_pos=43&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "14.999",
+        "original_price": "17.499",
+        "discount": 14,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA731592188",
+      "title": "Termo De Acero Inoxidable Original Lumilagro Con Pico Matero",
+      "image_src": "http://http2.mlstatic.com/D_804458-MLA44146514934_112020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-731592188-termo-de-acero-inoxidable-original-lumilagro-con-pico-matero-_JM?variation=32917235079&hide_psmb=true#reco_item_pos=44&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "3.123",
+        "original_price": "3.675",
+        "discount": 15,
+        "currency": "$",
+        "decimals": "75",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA870960874",
+      "title": "Taladro Atornillador Inalambrico Pampa 12v-litio",
+      "image_src": "http://http2.mlstatic.com/D_688805-MLA42980285128_082020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-870960874-taladro-atornillador-inalambrico-pampa-12v-litio-_JM?hide_psmb=true#reco_item_pos=45&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "4.799",
+        "original_price": "5.742",
+        "discount": 16,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA898986235",
+      "title": "Samsung Galaxy A10s 32 Gb Negro 2 Gb Ram",
+      "image_src": "http://http2.mlstatic.com/D_721874-MLA40452533045_012020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-898986235-samsung-galaxy-a10s-32-gb-negro-2-gb-ram-_JM?hide_psmb=true#reco_item_pos=46&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "19.988",
+        "discount": null,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    },
+    {
+      "id": "MLA862855034",
+      "title": "Coche De Bebé Paraguita Avanti Flow Barral Capota 3 Colores",
+      "image_src": "http://http2.mlstatic.com/D_758750-MLA41011436339_032020-I.jpg",
+      "free_shipping": true,
+      "link": {
+        "url": "https://articulo.mercadolibre.com.ar/MLA-862855034-coche-de-bebe-paraguita-avanti-flow-barral-capota-3-colores-_JM?variation=58217910522&hide_psmb=true#reco_item_pos=47&reco_backend=promotions-sorted-by-score-mla-B&reco_backend_type=low_level&reco_client=seller-promotions&reco_id=927af3c1-c403-492e-be24-9f8064d0a4d3"
+      },
+      "price": {
+        "price": "2.729",
+        "original_price": "3.399",
+        "discount": 19,
+        "currency": "$",
+        "decimals": "00",
+        "has_loyalty_discount": false
+      }
+    }
+  ],
+  "available_filters": [
+    {
+      "id": "MLA5725",
+      "name": "Accesorios para Vehículos"
+    },
+    {
+      "id": "MLA1512",
+      "name": "Agro"
+    },
+    {
+      "id": "MLA1403",
+      "name": "Alimentos y Bebidas"
+    },
+    {
+      "id": "MLA1071",
+      "name": "Animales y Mascotas"
+    },
+    {
+      "id": "MLA1367",
+      "name": "Antigüedades y Colecciones"
+    },
+    {
+      "id": "MLA1368",
+      "name": "Arte, Librería y Mercería"
+    },
+    {
+      "id": "MLA1384",
+      "name": "Bebés"
+    },
+    {
+      "id": "MLA1246",
+      "name": "Belleza y Cuidado Personal"
+    },
+    {
+      "id": "MLA1039",
+      "name": "Cámaras y Accesorios"
+    },
+    {
+      "id": "MLA1051",
+      "name": "Celulares y Teléfonos"
+    },
+    {
+      "id": "MLA1648",
+      "name": "Computación"
+    },
+    {
+      "id": "MLA1144",
+      "name": "Consolas y Videojuegos"
+    },
+    {
+      "id": "MLA1276",
+      "name": "Deportes y Fitness"
+    },
+    {
+      "id": "MLA5726",
+      "name": "Electrodomésticos y Aires Ac."
+    },
+    {
+      "id": "MLA1000",
+      "name": "Electrónica, Audio y Video"
+    },
+    {
+      "id": "MLA407134",
+      "name": "Herramientas y Construcción"
+    },
+    {
+      "id": "MLA1574",
+      "name": "Hogar, Muebles y Jardín"
+    },
+    {
+      "id": "MLA1499",
+      "name": "Industrias y Oficinas"
+    },
+    {
+      "id": "MLA1182",
+      "name": "Instrumentos Musicales"
+    },
+    {
+      "id": "MLA3937",
+      "name": "Joyas y Relojes"
+    },
+    {
+      "id": "MLA1132",
+      "name": "Juegos y Juguetes"
+    },
+    {
+      "id": "MLA3025",
+      "name": "Libros, Revistas y Comics"
+    },
+    {
+      "id": "MLA1168",
+      "name": "Música, Películas y Series"
+    },
+    {
+      "id": "MLA1953",
+      "name": "Otras categorías"
+    },
+    {
+      "id": "MLA1430",
+      "name": "Ropa y Accesorios"
+    },
+    {
+      "id": "MLA409431",
+      "name": "Salud y Equipamiento Médico"
+    },
+    {
+      "id": "MLA9304",
+      "name": "Souvenirs, Cotillón y Fiestas"
+    }
+  ]
+}

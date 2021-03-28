@@ -1,0 +1,31 @@
+{
+  "name": "testmeli-backend",
+  "version": "0.1.0",
+  "description": "server of MeLi",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "backend",
+    "server",
+    "test meli",
+    "juan ignacio gidoni"
+  ],
+  "author": "Juan Ignacio Gidoni, juan.gidoni@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "chalk": "^4.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.6",
+    "node-fetch": "^2.6.1",
+    "passport": "^0.4.1",
+    "passport-twitch": "^1.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
