@@ -1,19 +1,21 @@
-import Product from "../../molecules/Product"
-import { Link } from 'react-router-dom'
+import ProductsContainer from "../../organisms/ProductsContainer"
+import FiltersContainer from "../../organisms/FiltersContainer"
 
 const Home = ({
-    products
+    products, filters, setLoading
 }) => {
 
     return (
         <div className="row pr-0 pl-0 w-100">
-            {products && products.length > 0 ? products.map(
-                (v, i) => (
-                    <Link to={`/product/${v.id}`} key={i}>
-                        <Product id={v.id} title={v.title} price={v.price} shipping={v.shipping} thumbnail={v.thumbnail} />
-                    </Link>
-                )
-            ) : 'Products not found or error in the backend.'}
+
+            <div className="col-12 d-none d-lg-block col-lg-3 pr-0 pl-0">
+                <FiltersContainer filters={filters} setLoading={setLoading} className="d-none d-md-flex flex-column w-100 justify-content-center align-items-start" textColor="text-dark" />
+            </div>
+
+            <div className='col-12 col-lg-9 pr-0 pl-0'>
+                <ProductsContainer products={products} />
+            </div>
+
         </div>
     )
 }

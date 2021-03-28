@@ -1,6 +1,6 @@
-const Input = ({ placeholder, className, setInputValue }) => {
+const Input = ({ placeholder, className, setInputValue, inputValue, onKeyDown }) => {
     return (
-            <input placeholder={placeholder} className={className} onChange={(e) => setInputValue(e.target.value)} /> 
+            <input placeholder={placeholder} className={className} onChange={(e) => setInputValue(e.target.value)} value={inputValue} onKeyDown={onKeyDown} /> 
     )
 }
 

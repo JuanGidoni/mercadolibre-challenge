@@ -1,9 +1,9 @@
 import Parragraph from '../../atoms/Parragraph'
-const OffersHeader = ({ title, subtitle }) => {
+const OffersHeader = ({ title, subtitle, className }) => {
     return (
-        <div className="p-2">
-            <Parragraph titleType="h2">{title}</Parragraph>
-            <Parragraph titleType="p">{subtitle}</Parragraph>
+        <div className={className}>
+            <Parragraph titleType="h2" className="offers-h p-0 m-0">{title}</Parragraph>
+            <Parragraph titleType="p" className="offers-p p-0 m-0">{subtitle}</Parragraph>
         </div>
     )
 }
