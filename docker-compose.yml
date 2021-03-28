@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  backend:
+    env_file:
+        "./server/.env"
+    build:
+      context: ./server
+      dockerfile: ./Dockerfile
+    image: "juangidoni/testmeli-backend"
+    ports:
+      - "5000:5000"
+  frontend:
+    build:
+      context: ./client
+      dockerfile: ./Dockerfile
+    image: "juangidoni/testmeli-frontend"
+    ports:
+      - "3000:3000"
+    links:
+      - "backend:be"
