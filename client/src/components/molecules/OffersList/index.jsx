@@ -1,4 +1,5 @@
 import Button from '../../atoms/Button'
+
 const OffersList = ({ offersData, className }) => {
     return (
         <div className={className}>

@@ -86,7 +86,7 @@ const App = () => {
               {errorMsg && <div className="alert alert-danger w-100">{errorMsg}</div>}
 
               {loading ? <Loader /> :
-                <div className="col-12 pr-0 pl-0">
+                <div className="col-12">
                   <Switch>
                     <Route
                       exact
