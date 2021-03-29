@@ -1,8 +1,10 @@
 import { useParams } from 'react-router-dom'
 import Product from '../../molecules/Product'
+import { useDataContext } from '../../settings/DataContext'
 
-const Products = ({ products }) => {
-
+const Products = () => {
+    
+    const { products } = useDataContext()
     const { id } = useParams()
 
     return (

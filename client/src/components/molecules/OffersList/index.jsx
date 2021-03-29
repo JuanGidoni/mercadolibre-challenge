@@ -1,26 +1,24 @@
 import Button from '../../atoms/Button'
+import { useDataContext } from '../../settings/DataContext'
 
 const OffersList = ({ offersData, className }) => {
+
+    const { getResults, setLoading } = useDataContext()
+
     return (
         <div className={className}>
             {offersData && offersData.length > 0 ? (
                 offersData.map(
-                    (v,i) => (
-                        v.isDefault ? (
-                            <Button key={i} icon={v.image_src} className='offer-button active'>
-                            {v.name}
-                        </Button>
-                        ) : (
-                            <Button key={i} icon={v.image_src} className='offer-button no-active'>
-                            {v.name}
-                        </Button>
-                        )
+                    (v, i) => ( 
+                            <Button key={i} icon={v.image_src} className='offer-button' setLoading= {setLoading} getResults={getResults}>
+                                {v.name}
+                            </Button>
                     )
                 )
             ) :
-            (
-                <p>No data set</p>
-            )}
+                (
+                    <p>No data set</p>
+                )}
         </div>
     )
 }

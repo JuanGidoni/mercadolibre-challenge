@@ -1,10 +1,9 @@
 import ProductsContainer from "../../organisms/ProductsContainer"
 import FiltersContainer from "../../organisms/FiltersContainer"
+import { useDataContext } from '../../settings/DataContext'
 
-const Home = ({
-    products, filters, setLoading
-}) => {
-
+const Home = () => {
+    const { filters, setLoading, products } = useDataContext()
     return (
         <div className="row pr-0 pl-0 w-100">
 
@@ -17,6 +16,7 @@ const Home = ({
             </div>
 
         </div>
+
     )
 }
 

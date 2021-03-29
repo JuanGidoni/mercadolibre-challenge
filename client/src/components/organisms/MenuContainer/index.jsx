@@ -3,9 +3,11 @@ import MenuList from '../../molecules/MenuList'
 import MenuSearch from '../../molecules/MenuSearch'
 import Button from '../../atoms/Button'
 import { Link } from 'react-router-dom'
+import { useDataContext } from '../../settings/DataContext'
 
-const MenuContainer = ({ items, logo, searchPlaceHolder, icon, profile, setProducts, getResults, setLoading, sideToggle, setSideToggle }) => {
+const MenuContainer = () => {
     
+    const { setLoading, sideToggle, setSideToggle, meLiData, getResults } = useDataContext()
     const [inputValue, setInputValue] = useState('')
 
     return (
@@ -13,24 +15,23 @@ const MenuContainer = ({ items, logo, searchPlaceHolder, icon, profile, setProdu
             <div className="d-flex flex-column flex-grow-1 pt-2 h-100">
                 <div className="first-menu">
                 <MenuSearch 
-                logo={logo} 
-                searchPlaceHolder={searchPlaceHolder} 
-                icon={icon} 
+                logo={meLiData.header.logo} 
+                searchPlaceHolder={meLiData.header.search} 
+                icon={meLiData.header.ad_image} 
                 sideToggle={sideToggle} 
                 setSideToggle={setSideToggle} 
-                setProducts={setProducts} 
                 inputValue={inputValue} 
                 setInputValue={setInputValue} 
-                getResults={getResults}
-                setLoading={setLoading} />
+                setLoading={setLoading}
+                getResults={getResults} />
                 </div>
                 <div className="second-menu">
-                <MenuList profile={profile} items={items && items.length > 0 ? items : 'No items set'}  sideToggle={sideToggle} setSideToggle={setSideToggle} /> 
+                <MenuList profile={meLiData.header.profile} items={meLiData.header.links && meLiData.header.links.length > 0 ? meLiData.header.links : 'No items set'}  sideToggle={sideToggle} setSideToggle={setSideToggle} /> 
                 </div>
                 
             <div className={`sidebar-menu h-100 d-flex flex-column justify-content-center ${sideToggle === true ? 'open' : ''} d-md-none`}>
-                <Button type="sideMenu" onClick={() => setSideToggle(!sideToggle)} className="btn text-Close mb-3 text-center"> Close Menu</Button>
-                {items && items.length > 0 ? items.map(
+                <Button typeBtn="withClick" clickFunction={() => setSideToggle(!sideToggle)} className="btn text-Close mb-3 text-center"> Close Menu</Button>
+                {meLiData.header.links && meLiData.header.links.length > 0 ? meLiData.header.links.map(
                     (v,i) => <Link key={i} onClick={() => setSideToggle(!sideToggle)} to="/" className="btn text-center text-sideMenu">{v}</Link>
                 ): 'No menu items'}
             </div>
