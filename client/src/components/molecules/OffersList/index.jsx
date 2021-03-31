@@ -9,10 +9,10 @@ const OffersList = ({ offersData, className }) => {
         <div className={className}>
             {offersData && offersData.length > 0 ? (
                 offersData.map(
-                    (v, i) => ( 
-                            <Button key={i} icon={v.image_src} className='offer-button' setLoading= {setLoading} getResults={getResults} testId="__test_offerlist">
-                                {v.name}
-                            </Button>
+                    (v, i) => (
+                        <Button key={i} icon={v.image_src} className='offer-button' setLoading={setLoading} getResults={getResults} testId="__test_offerlist">
+                            {v.name}
+                        </Button>
                     )
                 )
             ) :

@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import Button from '../../atoms/Button'
 
 const MenuList = ({ items, profile }) => {
 
@@ -10,7 +9,6 @@ const MenuList = ({ items, profile }) => {
     return (
         <div className="d-flex flex-fill flex-row p-1 justify-content-between">
             <div className="position">
-
             </div>
             <div className="buttons d-none d-md-block">
                 {items && items.length > 0 ? items.map((v, i) => (

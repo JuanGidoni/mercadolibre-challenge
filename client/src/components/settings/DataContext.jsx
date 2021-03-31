@@ -91,7 +91,7 @@ export function DataProvider({ children, ...props }) {
     const [sideToggle, setSideToggle] = useState(false)
     const [meLiData, setMeLiData] = useState()
     const [meLiShortcuts, setMeLiShortCuts] = useState()
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
 
 
 
@@ -146,6 +146,7 @@ export function DataProvider({ children, ...props }) {
 
         return unsubscribe()
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const value = {

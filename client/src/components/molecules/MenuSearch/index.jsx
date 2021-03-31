@@ -6,12 +6,12 @@ import menuIcon from '../../assets/menu.png'
 import Button from '../../atoms/Button'
 import { Link, useHistory } from 'react-router-dom'
 
-const MenuSearch = ({ logo, searchPlaceHolder, icon, sideToggle, setSideToggle,inputValue, setInputValue, setLoading, getResults }) => {
+const MenuSearch = ({ logo, searchPlaceHolder, icon, sideToggle, setSideToggle, inputValue, setInputValue, setLoading, getResults }) => {
     const history = useHistory()
 
     const searchProducts = async (e) => {
 
-        try {        
+        try {
             setLoading(true)
             getResults(e)
             setInputValue('')

@@ -13,36 +13,31 @@ const Button = ({ children, className, icon, typeBtn, clickFunction, getResults,
 
     return (
         icon && testId ?
-            (
-                <button className={className} onClick={() => fetchOffers(children)} data-testid={testId} >
-                    <img src={icon} className="offers-icon" alt={children} data-testid={`${testId}Img`}/>
-                    { children}
-                </button >
-            ) :
-            typeBtn === 'withClick' && testId ?
-                (
-                    <button className={className} onClick={clickFunction} data-testid={testId}>
+            <button className={className} onClick={() => fetchOffers(children)} data-testid={testId} >
+                <img src={icon} className="offers-icon" alt={children} data-testid={`${testId}Img`} />
+                {children}
+            </button>
+            : typeBtn === "withClick" && testId ?
+                <button className={className} onClick={clickFunction} data-testid={testId}>
+                    {children}
+                </button>
+                : typeBtn === "offerBtn" && testId ?
+                    <button className={className} onClick={() => fetchOffers(children)} data-testid={testId}>
                         {children}
                     </button>
-                ) :
-                typeBtn === 'offerBtn' && testId ?
-                    (
-                        <button className={className} onClick={() => fetchOffers(children)} data-testid={testId}>
+                    : icon ?
+                        <button className={className} onClick={() => fetchOffers(children)} >
+                            <img src={icon} className="offers-icon" alt={children} />
                             {children}
-                        </button>
-                    ) :
-                    icon ?
-                        (
+                        </button >
+                        : typeBtn === "withClick" ?
                             <button className={className} onClick={() => fetchOffers(children)} >
                                 <img src={icon} className="offers-icon" alt={children} />
-                                { children}
-                            </button >
-                        ) :
-                        (
-                            <button className={className} onClick={clickFunction}>
                                 {children}
-                            </button>
-                        )
+                            </button >
+                            : <button className={className} >
+                                {children}
+                            </button >
     )
 }
 
