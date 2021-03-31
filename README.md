@@ -27,7 +27,10 @@ Creating testmeli_frontend_1 ...
 Creating testmeli_frontend_1 ... done
 ```
 
-### For testing use the next command:
+### A simple test
+
+* For testing Product.test.jsx and FiltersContainer.test.jsx run
+
 
 ```
 yarn test

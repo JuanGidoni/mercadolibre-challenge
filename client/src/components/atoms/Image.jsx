@@ -1,6 +1,7 @@
-const Image = ({ src , className}) => {
+const Image = ({ src , className, testId}) => {
+    const TestID = testId ? testId : false
     return (
-        <img src={src} className={className} alt={'Mercado Libre'} />
+        <img src={src} className={className} alt={'Mercado Libre'} data-testid={TestID} />
     )
 }
 

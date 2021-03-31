@@ -1,5 +1,5 @@
 const PriceBox = ({
-    price, original_price, className
+    price, original_price, className, testId
 }) => {
 
     function numberWithCommas(x) {
@@ -24,7 +24,7 @@ const PriceBox = ({
             {
                 original_price !== 0 && original_price > price ? <p className="line-through small text-muted p-0 m-0">$ {numberWithCommas(original_price)}</p> : ''
             }
-            <p>$ {numberWithCommas(price)}</p>
+            <p data-testid={testId}>$ {numberWithCommas(price)}</p>
         </div>
     )
 }

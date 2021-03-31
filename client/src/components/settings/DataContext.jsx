@@ -91,7 +91,7 @@ export function DataProvider({ children, ...props }) {
     const [sideToggle, setSideToggle] = useState(false)
     const [meLiData, setMeLiData] = useState()
     const [meLiShortcuts, setMeLiShortCuts] = useState()
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(false)
 
 
 

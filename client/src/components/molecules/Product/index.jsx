@@ -21,16 +21,16 @@ const Product = ({
     }
 
     return (
-        <div className="product w-100">
+        <div className="product w-100" id={id} data-testid="__test_pId">
             <div className="card product-box">
                 <div className="box">
-                <Image src={thumbnail} alt={title} className="product-img" />
+                <Image src={thumbnail} alt={title} className="product-img" testId="__test_pImgUrl" />
                 </div>
                 <div className="card-body d-flex flex-column justify-content-end align-items-start">
-                    <PriceBox price={price} original_price={original_price} className="h4 text-dark" />
-                    <p className="small text-success">{shipping.free_shipping ? 'Envio Gratis' : ''}</p>
+                    <PriceBox price={price} original_price={original_price} className="h4 text-dark" testId="__test_pPrice"/>
+                    <p className="small text-success" id="free-shipping">{shipping.free_shipping ? 'Envio Gratis' : ''}</p>
                     <div className="card-title text-muted">
-                        <Parragraph titleType="h6" className="m-0 p-0"> {formatString(title, 35)} </Parragraph>
+                        <Parragraph titleType="h6" className="m-0 p-0" testId="__test_pTitle"> {formatString(title, 35)} </Parragraph>
                     </div>
                 </div>
             </div>
