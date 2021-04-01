@@ -19,12 +19,32 @@ const PriceBox = ({
  
     } */
 
+    function calcPorcentage(original, offer) {
+        return ((original - offer) * 100 / original).toFixed(0)
+    }
+
     return (
         <div className={className}>
             {
-                original_price !== 0 && original_price > price ? <p className="line-through small text-muted p-0 m-0">$ {numberWithCommas(original_price)}</p> : ''
+                original_price !== 0 && original_price > price ?
+                    <div className="prices-box">
+                        <div className="offer-of-the-day">
+                            <p>
+                            OFERTA DEL DIA
+                            </p>
+                        </div>
+                        <p className="line-through smaller p-0 m-0">$ {numberWithCommas(original_price)}</p>
+                        <div className="d-flex flex-fill justify-content-start align-items-center">
+                            <p data-testid={testId} className="price">$ {numberWithCommas(price)}</p>
+                            <p data-testid={testId} className="discount-price">{calcPorcentage(original_price, price)}% OFF</p>
+                        </div>
+                    </div> : 
+                    <div className="prices-box">
+                    <div className="price">
+                        <p data-testid={testId}>$ {numberWithCommas(price)}</p>
+                    </div>
+                </div> 
             }
-            <p data-testid={testId}>$ {numberWithCommas(price)}</p>
         </div>
     )
 }

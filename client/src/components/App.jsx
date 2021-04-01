@@ -5,7 +5,8 @@ import { DataProvider } from './settings/DataContext'
 import Home from './pages/Home'
 import MenuContainer from './organisms/MenuContainer'
 import Offers from './organisms/Offers'
-import Products from './pages/Products'
+import Footer from './organisms/Footer'
+import ProductBox from './pages/ProductBox'
 import Categories from './pages/Categories'
 import E404 from './pages/E404'
 // CSS imports
@@ -42,7 +43,7 @@ const App = () => {
                     <Route
                       exact
                       path='/product/:id'>
-                      <Products />
+                      <ProductBox />
                     </Route>
                     <Route
                       exact
@@ -60,7 +61,7 @@ const App = () => {
               </div>
             </div>
           </div>
-
+          <Footer />
         </DataProvider>
       </Router>
     </div>

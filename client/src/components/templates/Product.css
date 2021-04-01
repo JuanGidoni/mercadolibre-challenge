@@ -1,12 +1,21 @@
 .product {
     background: #fff;
     border: 0;
-    border-radius: 4px;
-    height: 512px;
+    border-radius: 4px 4px 0 0;
+    height: auto;
     margin: 0 8px 16px;
     max-width: 1184px;
     padding: 0;
+    -webkit-transition: box-shadow .2s ease-in-out;
+    transition: box-shadow .2s ease-in-out;
     width: 100%;
+}
+.product:hover{
+    border: 0;
+    border-radius: 4px 4px 0 0;
+    -webkit-transition: box-shadow .2s ease-in-out;
+    transition: box-shadow .2s ease-in-out;
+    box-shadow:0 0 1px 1px rgba(0,0,0,.07),0 10px 15px 0 rgba(0,0,0,.1)
 }
 
 .product .product-link {
@@ -25,17 +34,49 @@
     vertical-align: top;
     width: 100%;
 }
+.box {
+    height: 50%;
+    width:100%;
+}
 
 .product-img {
     width:100%;
-    height: 350px;
+    height: 100%;
     max-height: fit-content;
+}
+
+.smaller {
+    font-size:.85em;
+    text-align: left;
+    color:#a8a8a8;
+}
+.price {
+    font-size:1.5em;
+    color:black;
+}
+.discount-price {
+    font-size: .85em;
+    padding:.75em;
+    color: #00a650;
+}
+.offer-of-the-day {
+    width:120px;
+}
+.offer-of-the-day p {
+    background-color: #3483fa;
+    padding: 0;
+    color:white;
+    border: 0;
+    border-radius: 4px;
+    font-size: .6em;
+    margin-bottom: 6px;
 }
 
 @media all and (min-width: 681px) {
 
     .product {
         width: 244px;
+        height: 512px;
     }
 
     .product-box {
@@ -45,17 +86,16 @@
         display: flex;
         -webkit-flex-direction: column;
         flex-direction: column;
-
         padding: 0;
         -webkit-transition: box-shadow .2s ease-in-out;
         transition: box-shadow .2s ease-in-out;
         width: 100%;
     }
 
-    .product-box img {
+    .box img {
         border-radius: 4px 4px 0 0;
-        width: 200px;
-        height: 225px;
+        width: 100%;
+        height: 100%;
         max-width: 1184px;
         max-height: max-content;
     }
