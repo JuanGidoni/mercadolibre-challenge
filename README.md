@@ -29,8 +29,13 @@ Creating testmeli_frontend_1 ... done
 
 ### A simple test
 
-* For testing Product.test.jsx and FiltersContainer.test.jsx run
+* Added 3 test (Product, Filters & Loader). For test just run:
+* 
+```
+yarn test
+```
 
+or
 
 ```
 yarn test
