@@ -30,7 +30,7 @@ Creating testmeli_frontend_1 ... done
 ### A simple test
 
 * Added 3 test (Product, Filters & Loader). For test just run:
-* 
+
 ```
 yarn test
 ```
