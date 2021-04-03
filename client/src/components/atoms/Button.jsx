@@ -1,10 +1,10 @@
 import { useHistory } from 'react-router-dom'
 import { useDataContext } from '../settings/DataContext'
 
-const Button = ({ children, className, icon, typeBtn, clickFunction, getResults, setLoading, testId, productId }) => {
+const Button = ({ children, className, icon, typeBtn, clickFunction, getResults, setLoading, testId, productId, idFromParams }) => {
 
     const history = useHistory()
-    const { setFav, fav, setAddStatus, setAdded } = useDataContext()
+    const { setFav, fav, setAddStatus, setAdded, added } = useDataContext()
 
     const fetchOffers = (e) => {
         getResults(e)
@@ -12,39 +12,40 @@ const Button = ({ children, className, icon, typeBtn, clickFunction, getResults,
         history.push('/')
     }
 
+    const handleRemoveItem = (idx) => {
+        // assigning the list to temp variable
+        const temp = [...fav];
+
+        // removing the element using splice
+        temp.splice(idx, 1);
+
+        // updating the list
+        setFav(temp);
+    }
+
     const addFav = (e) => {
         if (fav && fav.length > 0) {
-            fav.map(
-                (v) => {
-                    if (v === e) {
-                        return setAddStatus(
-                            {
-                                status: true,
-                                id: null,
-                                error: 'Item already added to favorite'
-                            }
-                        )
-                    } else {
-                        setAdded(true)
-                        setAddStatus({
-                            status: true,
-                            id: e,
-                            error: null
-                        })
-                        setTimeout(() => {
-                            setAddStatus({
-                                status: false,
-                                id: null,
-                                error: null
-                            })
-                        }, 3000);
-                        return setFav([...fav, e])  
-                    }
-                }
-            )
-
-        }else {
-            setFav([...fav, e])  
+            const itemIndex = fav.indexOf(e)
+            if (fav.includes(e)) {
+                setAdded(false)
+                setAddStatus({
+                    status: false,
+                    id: null,
+                    error: 'Item removed'
+                })
+                console.log('Item removed from favorites line 39')
+                return handleRemoveItem(itemIndex)
+            } else {
+                setFav([...fav, e])
+                setAddStatus({
+                    status: true,
+                    id: e,
+                    error: null
+                })
+                setAdded(true)
+            }
+        } else {
+            setFav([...fav, e])
             setAddStatus({
                 status: true,
                 id: e,

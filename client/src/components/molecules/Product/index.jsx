@@ -6,12 +6,12 @@ import Button from '../../atoms/Button'
 import { FaHeart } from 'react-icons/fa'
 
 const Product = ({
-    id, title, price, thumbnail, shipping, original_price, className, added
+    id, title, price, thumbnail, shipping, original_price, className, added, idFromParams
 }) => {
     return (
         <div className={className} id={id} data-testid="__test_pId">
        <div className="add-favorite w-100 d-flex justify-content-end align-items-center">
-            <Button typeBtn="addFav" className={`btn btn-fav fav-${added ? true : false}`} productId={id} >
+            <Button typeBtn="addFav" className={`btn btn-fav fav-${added ? true : false}`} productId={id} idFromParams={idFromParams} >
                 <FaHeart />
             </Button>
         </div>

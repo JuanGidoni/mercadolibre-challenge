@@ -16,15 +16,12 @@ const ProductBox = () => {
 
             if(fav && fav.length > 0){
                 if(fav.includes(idFormat)){
-                    console.log('item is added to favorite list')
                     return setAdded(true)
                 }else {
-                    console.log('item isnt added to favorite list')
                     return setAdded(false)
                 }
             }else{
                 setAdded(false)
-                console.log('item isnt added to favorite list')
             }
         }
 
@@ -41,7 +38,7 @@ const ProductBox = () => {
 
                     products && products.length > 0 ? products.map(
                         (v, i) => (
-                            v.id === id ? <Product added={added} key={i} id={v.id} title={v.title} price={v.price} shipping={v.shipping} thumbnail={v.thumbnail} className="product-only w-100 h-auto" /> : false
+                            v.id === id ? <Product added={added} key={i} id={v.id} idFromParams={id} title={v.title} price={v.price} shipping={v.shipping} thumbnail={v.thumbnail} className="product-only w-100 h-auto" /> : false
                         )
                     ) : 'Products list not found or invalid id'
             }
