@@ -5,7 +5,7 @@ const fetch = require('node-fetch');
 const search = require('./routes/search.js')
 const filter = require('./routes/filter.js')
 const categories = require('./routes/categories.js')
-const data = require('./data/data.json')
+const seller = require('./routes/seller.js')
 env.config()
 const app = express()
 const port = process.env.PORT || 5000;
@@ -46,6 +46,7 @@ app.get('/v1/', async (req, res) => {
 app.use("/v1/search/", search);
 app.use("/v1/filter/", filter);
 app.use("/v1/categories/", categories);
+app.use("/v1/seller/", seller);
 
 app.listen(port, () => {
     console.log(`Server running on port: ${port}`);

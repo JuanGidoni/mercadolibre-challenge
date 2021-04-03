@@ -32,7 +32,7 @@ Creating testmeli_frontend_1 ... done
 * Added 3 test (Product, Filters & Loader). For test just run:
 
 ```
-yarn test
+npm test
 ```
 
 or

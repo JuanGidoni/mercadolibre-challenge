@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
+import { FaHeart } from 'react-icons/fa'
+import { useDataContext } from '../../settings/DataContext'
 
 const MenuList = ({ items, profile }) => {
+    const { fav } = useDataContext()
 
     const formatLinksURL = (e) => {
         let newLinkUrl = e.replace(/\s/g, '').toLowerCase()
@@ -15,8 +18,12 @@ const MenuList = ({ items, profile }) => {
                     <Link key={i} to={`/${formatLinksURL(v)}`} className="btn btn-menu-meli">{v}</Link>
                 )) : 'MenuList is empty'}
             </div>
-            <div className="account d-none d-md-block">
+            <div className="account d-none d-md-flex">
                 <Link to="/profile" className="btn btn-menu-meli">{profile}</Link>
+                <Link to="/favorites" className={`btn btn-fav d-flex flex-fill justify-content-center align-items-center ${fav && fav.length > 0 ? 'fav-true' : 'fav-false'}`}>
+                    <FaHeart/>
+                    <div className="ml-1">{fav && fav.length ? fav.length : ''}</div>
+                </Link>
             </div>
         </div>
     )

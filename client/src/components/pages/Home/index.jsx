@@ -3,7 +3,7 @@ import FiltersContainer from "../../organisms/FiltersContainer"
 import { useDataContext } from '../../settings/DataContext'
 
 const Home = () => {
-    const { filters, setLoading, products } = useDataContext()
+    const { filters, setLoading, products, seller } = useDataContext()
     return (
         <div className="row pr-0 pl-0 w-100">
 
@@ -12,7 +12,7 @@ const Home = () => {
             </div>
 
             <div className='col-12 col-lg-9 pr-0 pl-0'>
-                <ProductsContainer products={products} />
+                <ProductsContainer products={products} seller={seller} />
             </div>
 
         </div>

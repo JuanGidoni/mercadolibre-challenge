@@ -8,6 +8,7 @@ import Offers from './organisms/Offers'
 import Footer from './organisms/Footer'
 import ProductBox from './pages/ProductBox'
 import Categories from './pages/Categories'
+import Favorites from './pages/Favorites'
 import E404 from './pages/E404'
 // CSS imports
 import './templates/App.css'
@@ -49,6 +50,11 @@ const App = () => {
                       exact
                       path='/categories/:id'>
                       <Categories />
+                    </Route>
+                    <Route
+                      exact
+                      path='/favorites'>
+                      <Favorites />
                     </Route>
                     <Route
                       exact

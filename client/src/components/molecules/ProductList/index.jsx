@@ -6,6 +6,8 @@ import '../../templates/Product.css'
 const ProductList = ({
     id, title, price, thumbnail, shipping, original_price, className
 }) => {
+
+    // const { getSellerData } = useContext(useDataContext)
     // function to format the string by length size then add ... to cut it
     function formatString(text, length) {
         if (text == null) {

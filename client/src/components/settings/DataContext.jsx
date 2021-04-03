@@ -85,13 +85,21 @@ export function DataProvider({ children, ...props }) {
     const url = process.env.REACT_APP_BACKEND_URL || 'http://localhost'
     const port = process.env.REACT_APP_BACKEND_PORT || 5000
 
-    const [products, setProducts] = useState([])
-    const [filters, setFilters] = useState([])
-    const [errorMsg, setErrorMsg] = useState({})
-    const [sideToggle, setSideToggle] = useState(false)
     const [meLiData, setMeLiData] = useState()
     const [meLiShortcuts, setMeLiShortCuts] = useState()
+    const [fav, setFav] = useState([])
+    const [products, setProducts] = useState([])
+    const [filters, setFilters] = useState([])
+    const [seller, setSeller] = useState([])
+    const [sideToggle, setSideToggle] = useState(false)
     const [loading, setLoading] = useState(true)
+    const [errorMsg, setErrorMsg] = useState({})
+    const [added, setAdded] = useState(false)
+    const [addStatus, setAddStatus] = useState({
+        status: false,
+        id: null,
+        error: null
+    })
 
 
 
@@ -125,6 +133,19 @@ export function DataProvider({ children, ...props }) {
         }
     }
 
+    /* const getSellerData = async (id) => {
+        try {
+            if(id){
+                const results = await fetch(`${url}:${port}/v1/seller/${id}`)
+                const response = await results.json()
+                setSeller(response)
+                setLoading(false)
+            }
+        } catch (error) {
+            setErrorMsg(error)
+        }
+    } */
+
     const verifyCategory = async (id) => {
         try {
             const fetchCategory = await fetch(`${url}:${port}/v1/filter/${id}`)
@@ -146,17 +167,25 @@ export function DataProvider({ children, ...props }) {
 
         return unsubscribe()
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const value = {
+        // getSellerData,
         verifyCategory,
         getResults,
         getFilters,
         setFilters,
+        setSeller,
         setProducts,
         setSideToggle,
         setLoading,
+        setFav,
+        setAddStatus,
+        setAdded,
+        added,
+        addStatus,
+        seller,
         products,
         filters,
         errorMsg,
@@ -165,7 +194,8 @@ export function DataProvider({ children, ...props }) {
         loading,
         sideToggle,
         port,
-        url
+        url,
+        fav
     }
 
     return (

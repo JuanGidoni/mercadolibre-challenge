@@ -38,6 +38,25 @@
     height: 50%;
     width:100%;
 }
+.btn-menu-meli:focus {
+    box-shadow: none !important;
+    box-shadow: none !important;
+    box-shadow: none !important;
+}
+.btn-fav:hover {
+    color: rgb(189, 39, 84) !important;
+}
+.fav-true {
+    color: rgb(189, 39, 84) !important;
+}
+.fav-false {
+    color: #c9c9c9 !important;
+}
+.btn-fav:focus {
+    box-shadow: none !important;
+    box-shadow: none !important;
+    box-shadow: none !important;
+}
 
 .product-img {
     width:100%;
