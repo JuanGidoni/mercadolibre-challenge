@@ -8,7 +8,9 @@ This project includes a technical test for a job interview at MeLi
 
 Prerequisites: [Node.js](https://nodejs.org/) (`^14..0.0`, or `=14.16.0`) built with SSL support. (If you are using an official Node.js distribution, SSL is always built in.)
 
-### Using Docker:
+Optional: [Docker Desktop](https://www.docker.com/products/docker-desktop) (`^20.10.0`). (Official Docker distribution)
+
+### Using Docker (Optional):
 
 ls-> TestMeLi folder and run this command: (or git bash here if you have git installed)
 
@@ -26,6 +28,11 @@ Creating testmeli_backend_1 ... done
 Creating testmeli_frontend_1 ...
 Creating testmeli_frontend_1 ... done
 ```
+
+### Install & Run locally
+
+* [Frontend Readme](https://github.com/JuanGidoni/TestMeLi/tree/master/client#test-meli-frontend)
+* [Backend Readme](https://github.com/JuanGidoni/TestMeLi/tree/master/server#test-meli-backend)
 
 ### A simple test
 
@@ -56,10 +63,5 @@ Go to [localhost api filter example](http://localhost:5000/v1/filter/MLA1648)
 Go to [Localhost](http://localhost:3000)
 
 ##
-
-### Install & Run locally
-
-* [Frontend Readme](https://github.com/JuanGidoni/TestMeLi/tree/master/client#test-meli-frontend)
-* [Backend Readme](https://github.com/JuanGidoni/TestMeLi/tree/master/server#test-meli-backend)
 
 ### Project Version: 0.02
