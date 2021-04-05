@@ -10,7 +10,12 @@ Prerequisites: [Node.js](https://nodejs.org/) (`^14..0.0`, or `=14.16.0`) built 
 
 Optional: [Docker Desktop](https://www.docker.com/products/docker-desktop) (`^20.10.0`). (Official Docker distribution)
 
-### Using Docker (Optional):
+### Install & Run locally
+
+* [Frontend Readme](https://github.com/JuanGidoni/TestMeLi/tree/master/client#test-meli-frontend)
+* [Backend Readme](https://github.com/JuanGidoni/TestMeLi/tree/master/server#test-meli-backend)
+
+#### Using Docker (Optional):
 
 ls-> TestMeLi folder and run this command: (or git bash here if you have git installed)
 
@@ -29,12 +34,7 @@ Creating testmeli_frontend_1 ...
 Creating testmeli_frontend_1 ... done
 ```
 
-### Install & Run locally
-
-* [Frontend Readme](https://github.com/JuanGidoni/TestMeLi/tree/master/client#test-meli-frontend)
-* [Backend Readme](https://github.com/JuanGidoni/TestMeLi/tree/master/server#test-meli-backend)
-
-### A simple test
+#### A simple test
 
 * Added 3 test (Product, Filters & Loader). For test just run:
 
@@ -64,4 +64,4 @@ Go to [Localhost](http://localhost:3000)
 
 ##
 
-### Project Version: 0.02
+### Project Version: 0.03
