@@ -3,12 +3,8 @@ import { FaHeart } from 'react-icons/fa'
 import { useDataContext } from '../../settings/DataContext'
 
 const MenuList = ({ items, profile }) => {
-    const { fav } = useDataContext()
+    const { fav, formatLinksURL } = useDataContext()
 
-    const formatLinksURL = (e) => {
-        let newLinkUrl = e.replace(/\s/g, '').toLowerCase()
-        return newLinkUrl
-    }
     return (
         <div className="d-flex flex-fill flex-row p-1 justify-content-between">
             <div className="position">

@@ -21,20 +21,20 @@ const App = () => {
   return (
     <div className="App">
       <Router>
+        {/* Data provider */}
         <DataProvider>
 
           <div className="menu-meli h-100">
+          {/* Menu container (logo, search and navbar) */}
             <MenuContainer />
           </div>
           <div className="ofertas-meli h-100 container-lg">
+          {/* Offers List (navbar with icons) */}
             <Offers />
           </div>
 
           <div className="container-fluid home">
-            <div className="container">
-              <div className="row pt-4">
-
-                <div className="col-12">
+            <div className="container home pt-3">
                   <Switch>
                     <Route
                       exact
@@ -65,8 +65,6 @@ const App = () => {
                 </div>
 
               </div>
-            </div>
-          </div>
           <Footer />
         </DataProvider>
       </Router>

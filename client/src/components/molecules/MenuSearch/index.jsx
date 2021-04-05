@@ -10,12 +10,15 @@ const MenuSearch = ({ logo, searchPlaceHolder, icon, sideToggle, setSideToggle, 
     const history = useHistory()
 
     const searchProducts = async (e) => {
-
         try {
+            if(e.toString() && e.length > 3){
             setLoading(true)
             getResults(e)
             setInputValue('')
             history.push("/")
+            }else {
+            setInputValue('Please insert a value to search')
+            }
         } catch (error) {
             console.log(error)
         }

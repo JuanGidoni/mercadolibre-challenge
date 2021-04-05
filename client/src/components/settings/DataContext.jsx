@@ -82,6 +82,7 @@ const _MeliShortcuts = [
 ]
 
 export function DataProvider({ children, ...props }) {
+    
     const url = process.env.REACT_APP_BACKEND_URL || 'http://localhost'
     const port = process.env.REACT_APP_BACKEND_PORT || 5000
 
@@ -93,8 +94,10 @@ export function DataProvider({ children, ...props }) {
     const [seller, setSeller] = useState([])
     const [sideToggle, setSideToggle] = useState(false)
     const [loading, setLoading] = useState(true)
+    const [categoryLoading, setCategoryLoading] = useState(true)
     const [errorMsg, setErrorMsg] = useState({})
     const [added, setAdded] = useState(false)
+    const [totalItems, setTotalItems] = useState(0)
     const [addStatus, setAddStatus] = useState({
         status: false,
         id: null,
@@ -102,19 +105,108 @@ export function DataProvider({ children, ...props }) {
     })
 
 
-
-    const getResults = async (e) => {
+    const fetchOffers = (e, history) => {
+        getResults(e)
         setLoading(true)
+        history.push('/')
+    }
+
+    const formatLinksURL = (e) => {
+        let newLinkUrl = e.replace(/\s/g, '').toLowerCase()
+        return newLinkUrl
+    }
+
+    const handleRemoveItem = (idx) => {
+        // assigning the list to temp variable
+        const temp = [...fav];
+
+        // removing the element using splice
+        temp.splice(idx, 1);
+
+        // updating the list
+        setFav(temp);
+    }
+
+    const addFav = (p) => {
+        if (fav && fav.length > 0) {
+            const itemIndex = fav.indexOf(p.id)
+            console.log(itemIndex)
+            // tomorrow fix this line, add fav and checkfav with obj
+            const itemFound = fav.some(item => item.id === p.id)
+            if (itemFound) {
+                setAdded(false)
+                setAddStatus({
+                    status: false,
+                    id: null,
+                    error: 'Item removed'
+                })
+                console.log('Item removed from favorites line 39')
+                return handleRemoveItem(itemIndex)
+            } else {
+                setFav([...fav, p])
+                setAddStatus({
+                    status: true,
+                    id: p.id,
+                    error: null
+                })
+                setAdded(true)
+            }
+        } else {
+            setFav([...fav, p])
+            setAddStatus({
+                status: true,
+                id: p.id,
+                error: null
+            })
+            setAdded(true)
+        }
+    }
+
+    const getItem = async (e) => {
         try {
             if (e) {
-                const results = await fetch(`${url}:${port}/v1/search/${e}`)
+                const results = await fetch(`${url}:${port}/v1/item/${e}`)
                 const response = await results.json()
-                setProducts(response)
+                setProducts([response])
+                setLoading(false)
 
             } else {
                 const results = await fetch(`${url}:${port}/v1/`)
                 const response = await results.json()
-                setProducts(response)
+                setProducts([response])
+            }
+        } catch (error) {
+            setErrorMsg(error)
+        }
+    }
+
+    const checkifFavExist = (id) => {
+
+        if (fav && fav.length > 0) {
+            const itemFound = fav.some(item => item.id === id)
+            itemFound ? setAdded(true) : setAdded(false)
+        }else if(loading) {
+            getItem(id)
+            setAdded(false)
+        }else {
+            setAdded(false)
+        }
+    }
+
+    const getResults = async (e) => {
+        try {
+            setLoading(true)
+            if (e) {
+                const results = await fetch(`${url}:${port}/v1/search/${e}`)
+                const response = await results.json()
+                setProducts(response.results)
+                setTotalItems(response.paging.total)
+
+            } else {
+                const results = await fetch(`${url}:${port}/v1/`)
+                const response = await results.json()
+                setProducts(response.results)
+                setTotalItems(response.paging.total)
             }
             getFilters()
         } catch (error) {
@@ -147,22 +239,23 @@ export function DataProvider({ children, ...props }) {
     } */
 
     const verifyCategory = async (id) => {
-        try {
+        try {        
             const fetchCategory = await fetch(`${url}:${port}/v1/filter/${id}`)
-            const results = await fetchCategory.json()
-            setProducts(results)
+            const response = await fetchCategory.json()
+            setProducts(response.results)
+            setTotalItems(response.paging.total)
+            setCategoryLoading(false)
         } catch (error) {
             setErrorMsg('Error fetching categories products or invalid category.')
         }
     }
 
-
     useEffect(() => {
         const unsubscribe = () => {
+            setLoading(true)
             getResults()
             setMeLiData(_MeLiData)
             setMeLiShortCuts(_MeliShortcuts)
-            setLoading(true)
         }
 
         return unsubscribe()
@@ -183,7 +276,15 @@ export function DataProvider({ children, ...props }) {
         setFav,
         setAddStatus,
         setAdded,
+        setCategoryLoading,
+        fetchOffers,
+        addFav,
+        checkifFavExist,
+        formatLinksURL,
+        setTotalItems,
+        categoryLoading,
         added,
+        totalItems,
         addStatus,
         seller,
         products,

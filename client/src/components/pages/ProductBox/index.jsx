@@ -6,41 +6,39 @@ import { useDataContext } from '../../settings/DataContext'
 
 const ProductBox = () => {
 
-    const { products, loading, fav, added, setAdded } = useDataContext()
+
+    // declare destructuring functions/const from DataContext
+    const { products, loading, fav, added, checkifFavExist } = useDataContext()
+    // declare id from useParams (from url parameters from react router dom)
     const { id } = useParams()
 
 
     useEffect(() => {
-        const checkifFavExist = (id) => {
-            let idFormat = id.toString();
-
-            if(fav && fav.length > 0){
-                if(fav.includes(idFormat)){
-                    return setAdded(true)
-                }else {
-                    return setAdded(false)
-                }
-            }else{
-                setAdded(false)
-            }
-        }
-
         const renderProduct = (e) => {
+            // check if Favorite List exist (to set added or !added to the product)
             checkifFavExist(e)
         }
         return renderProduct(id)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [id])
 
     return (
         <div className="row w-100 pr-0 pl-0">
             {
+                // if loading render Loader else render favs else render products else product not found
                 loading ? <Loader /> :
 
-                    products && products.length > 0 ? products.map(
+                fav && fav.length > 0 && fav.some(item => item.id === id) ? fav.map(
+                    (vFav, iFav) => (
+                        vFav.id === id ? <Product added={added} key={iFav} product={vFav} className="product-only w-100 h-100 pb-5" />
+                            : false
+                    )
+                ) : products && products.length > 0 ? products.map(
                         (v, i) => (
-                            v.id === id ? <Product added={added} key={i} id={v.id} idFromParams={id} title={v.title} price={v.price} shipping={v.shipping} thumbnail={v.thumbnail} className="product-only w-100 h-auto" /> : false
+                            v.id === id ? <Product added={added} key={i} product={v} className="product-only w-100 h-100 pb-5" />
+                                :  false
                         )
-                    ) : 'Products list not found or invalid id'
+                    )  : <div className="not-found">Products not found.</div>
             }
         </div>
     )

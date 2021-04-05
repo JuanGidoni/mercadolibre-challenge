@@ -44,7 +44,7 @@
     animation: Icon-grayscale .7s linear;
     transition: ease-in-out .5s;
     filter: blur(0);
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 
 .offers-icon {
@@ -56,46 +56,33 @@
 @keyframes Icon-grayscale {
     0% {
         filter: grayscale(0) blur(0);
-        transform: rotate(0deg) scale(1);
+        transform: scale(1);
     }
 
     50% {
-        filter: grayscale(50) blur(3px);
-        transform: rotate(360deg) scale(1.7);
+        filter: grayscale(50) blur(1px);
+        transform: scale(1.15);
     }
 
     100% {
         filter: grayscale(0) blur(0);
-        transform: rotate(360deg) scale(1.5);
+        transform: scale(1.1);
     }
 }
 
 @media all and (min-width: 681px) {
     .offers-h {
-        font-size:2em;
+        font-size: 2em;
     }
+
     .offers-p {
         font-size: 1em;
-        margin:0;
+        margin: 0;
     }
+
     .offers-icon {
         height: 48px;
         margin-bottom: 12px;
         width: auto;
     }
 }
-
-
-/* @keyframes pulsate {
-    50% {
-      box-shadow:
-        0 0 20px #fff,
-        20px 0 80px #f0f,
-        -20px 0 80px #0ff,
-        inset 0 0 50px #fff,
-        inset -50px 0 80px #f0f,
-        inset 50px 0 80px #0ff,
-        inset -50px 0 300px #f0f,
-        inset 50px 0 300px #0ff;
-    }
-  } */
