@@ -4,6 +4,32 @@ This project includes a technical test for a job interview at MeLi
 
 * Create the most viewed page of MeLi on React
 
+## <a name="dependencies"></a>Dependencies used in this project
+
+* [Frontend](https://github.com/JuanGidoni/TestMeLi/tree/master/client#test-meli-frontend)
+
+```
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "bootstrap": "^4.6.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.0.1"
+```
+
+* [Backend](https://github.com/JuanGidoni/TestMeLi/tree/master/server#test-meli-backend)
+
+```
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+```
+
 ## <a name="installation-and-usage"></a>Installation and Usage
 
 Prerequisites: [Node.js](https://nodejs.org/) (`^14..0.0`, or `=14.16.0`) built with SSL support. (If you are using an official Node.js distribution, SSL is always built in.)

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import Button from '../../atoms/Button'
 import { useDataContext } from '../../settings/DataContext'
 
 const FiltersContainer = ({ filters, className, textColor }) => {
@@ -13,7 +13,7 @@ const FiltersContainer = ({ filters, className, textColor }) => {
         </div>
             {filters && filters.length > 0 ? filters.map(
                 (v, i) => (
-                    <Link key={i} to={`/categories/${v.id}`} className={textColor+' text-decoration-none'} data-testid="__test_filtersLink" > {v.name} </Link>
+                    <Button key={i} typeBtn="filtersClick" categoryId={v.id} className={textColor+' text-decoration-none btn p-0 m-0 w-100 text-left'} data-testid="__test_filtersLink" > {v.name} </Button>
                 )
             ) : 'No filters found'}
         </ul>

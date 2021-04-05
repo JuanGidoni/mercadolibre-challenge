@@ -82,10 +82,12 @@ const _MeliShortcuts = [
 ]
 
 export function DataProvider({ children, ...props }) {
-    
+
+    // declare constant for url & port for backend API
     const url = process.env.REACT_APP_BACKEND_URL || 'http://localhost'
     const port = process.env.REACT_APP_BACKEND_PORT || 5000
 
+    // declare constants for globals states
     const [meLiData, setMeLiData] = useState()
     const [meLiShortcuts, setMeLiShortCuts] = useState()
     const [fav, setFav] = useState([])
@@ -101,67 +103,110 @@ export function DataProvider({ children, ...props }) {
     const [addStatus, setAddStatus] = useState({
         status: false,
         id: null,
+        message: null,
         error: null
     })
 
-
+    // this arrow function works to fetch results by clicking the offers items (OffersList/Button)
     const fetchOffers = (e, history) => {
+
+        // fetch the results with e (query)
         getResults(e)
+
+        // set the loader TRUE
         setLoading(true)
+
+        // push the history url to "/": home page
         history.push('/')
     }
 
-    const formatLinksURL = (e) => {
-        let newLinkUrl = e.replace(/\s/g, '').toLowerCase()
-        return newLinkUrl
+    // this arrow function works to fetch results by clicking the offers items (OffersList/Button)
+    const fetchFilters = (e, history) => {
+
+        // fetch the results with e (query)
+        getFiltersData(e)
+
+        // set the loader TRUE
+        setLoading(true)
+
+        // push the history url to "/": home page
+        history.push('/')
     }
 
-    const handleRemoveItem = (idx) => {
+    // this arrow function works to format the links url (Remove spaces to fetch correctly on url param
+    // example: "tiendasoficiales" (original: "tiendas oficiales"))
+    const formatLinksURL = (e) => {
+
+        // replace the sapces and turn it to lowercase from e
+        let newLinkUrl = e.replace(/\s/g, '').toLowerCase()
+
+        // return the new link url
+        return newLinkUrl
+
+    }
+
+    // this arrow function works for handle the item to be removed with ID
+    const handleRemoveItem = (idx, history) => {
+
         // assigning the list to temp variable
         const temp = [...fav];
 
         // removing the element using splice
-        temp.splice(idx, 1);
+        temp.splice(idx, idx >= 0 ? 1 : 0);
 
         // updating the list
         setFav(temp);
+
+        // set a status message
+        setAddStatus({
+            status: false,
+            id: null,
+            message: 'Item removed',
+            error: null,
+        })
+
+        // send the user to home page using history
+        history.push("/")
+
     }
 
-    const addFav = (p) => {
+    // this arrow function works to add a favorite item to your favorite list (from: Button/Each product)
+    const addFav = (p, history) => {
+
+        // if favorite list and the length of it is higher of 0 then check if the item already exists or added to the list
         if (fav && fav.length > 0) {
-            const itemIndex = fav.indexOf(p.id)
-            console.log(itemIndex)
-            // tomorrow fix this line, add fav and checkfav with obj
-            const itemFound = fav.some(item => item.id === p.id)
-            if (itemFound) {
+
+            // declare constant for index of the favorite to be removed
+            const idx = fav.findIndex(v => v.id === p.id);
+            // condition if idx exist = 1 then remove the item else added
+            if (idx >= 0 ? 1 : 0) {
                 setAdded(false)
-                setAddStatus({
-                    status: false,
-                    id: null,
-                    error: 'Item removed'
-                })
-                console.log('Item removed from favorites line 39')
-                return handleRemoveItem(itemIndex)
+                return handleRemoveItem(idx, history)
             } else {
                 setFav([...fav, p])
                 setAddStatus({
                     status: true,
                     id: p.id,
+                    message: 'Next item added',
                     error: null
                 })
                 setAdded(true)
             }
         } else {
+
+            // if favorite array is empty, add the first object 
             setFav([...fav, p])
             setAddStatus({
                 status: true,
                 id: p.id,
+                message: 'First item added',
                 error: null
             })
             setAdded(true)
         }
     }
-
+    
+    // this arrow function works to get a unique item search (not implemented in the site: future versions)
     const getItem = async (e) => {
         try {
             if (e) {
@@ -179,20 +224,23 @@ export function DataProvider({ children, ...props }) {
             setErrorMsg(error)
         }
     }
-
+    
+    // this arrow function works to check if a favorite exist to set the Added style to the Favorite Button or none
     const checkifFavExist = (id) => {
 
         if (fav && fav.length > 0) {
             const itemFound = fav.some(item => item.id === id)
             itemFound ? setAdded(true) : setAdded(false)
-        }else if(loading) {
+        } else if (loading) {
             getItem(id)
             setAdded(false)
-        }else {
+        } else {
             setAdded(false)
         }
+
     }
 
+    // this arrow function works to get all the results from a search
     const getResults = async (e) => {
         try {
             setLoading(true)
@@ -214,6 +262,7 @@ export function DataProvider({ children, ...props }) {
         }
     }
 
+    // this arrow function works to (in this case) get categories (if you have filters, then this will be for filters in future cases)
     const getFilters = async () => {
         try {
             const results = await fetch(`${url}:${port}/v1/categories`)
@@ -222,6 +271,18 @@ export function DataProvider({ children, ...props }) {
             setLoading(false)
         } catch (error) {
             setErrorMsg(error)
+        }
+    }
+    
+    const getFiltersData = async (id) => {
+        try {
+            const fetchFilter = await fetch(`${url}:${port}/v1/filter/${id}`)
+            const response = await fetchFilter.json()
+            setProducts(response.results)
+            setTotalItems(response.paging.total)
+            setLoading(false)
+        } catch (error) {
+            setErrorMsg('Error fetching filters products or invalid category id.')
         }
     }
 
@@ -237,9 +298,10 @@ export function DataProvider({ children, ...props }) {
             setErrorMsg(error)
         }
     } */
-
+    
+    // this arrow function works to verify and get results from a categorie id (in future cases this will work with filters)
     const verifyCategory = async (id) => {
-        try {        
+        try {
             const fetchCategory = await fetch(`${url}:${port}/v1/filter/${id}`)
             const response = await fetchCategory.json()
             setProducts(response.results)
@@ -250,6 +312,7 @@ export function DataProvider({ children, ...props }) {
         }
     }
 
+    // useEffect once to get the data then unsuscribe it
     useEffect(() => {
         const unsubscribe = () => {
             setLoading(true)
@@ -262,9 +325,11 @@ export function DataProvider({ children, ...props }) {
 
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
-
+    
+    // this constant will be sended to the Provider to be used in all the components with the functions/values
     const value = {
         // getSellerData,
+        fetchFilters,
         verifyCategory,
         getResults,
         getFilters,

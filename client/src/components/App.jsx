@@ -7,7 +7,6 @@ import MenuContainer from './organisms/MenuContainer'
 import Offers from './organisms/Offers'
 import Footer from './organisms/Footer'
 import ProductBox from './pages/ProductBox'
-import Categories from './pages/Categories'
 import Favorites from './pages/Favorites'
 import E404 from './pages/E404'
 // CSS imports
@@ -45,11 +44,6 @@ const App = () => {
                       exact
                       path='/product/:id'>
                       <ProductBox />
-                    </Route>
-                    <Route
-                      exact
-                      path='/categories/:id'>
-                      <Categories />
                     </Route>
                     <Route
                       exact
