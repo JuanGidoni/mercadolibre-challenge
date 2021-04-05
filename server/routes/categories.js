@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
         let itemToReturn = []
 
         // declaring getData to await the response of the api
-        const getData = await fetch(`${MELI_URL}/categories`)
+        const getData = await fetch(`${MELI_URL}sites/MLA/categories`)
         
         // waiting and converting the data into a json object
         const response = await getData.json()

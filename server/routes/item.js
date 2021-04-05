@@ -9,23 +9,22 @@ env.config();
 // declare base url from process env if doesn't exist set it default
 const MELI_URL = process.env.MELI_URL || process.env.BASE_URL || 'http://localhost:5000'
 
-router.get('/:search', async (req, res) => {
+router.get('/:item', async (req, res) => {
     // try catch to process data from the api
     try {
-        // declare search parameter from req
-        const search = req.params.search
+        // declare item parameter from req
+        const item = req.params.item
 
         // declaring getResults to await the response of the api
-        const getResults = await fetch(`${MELI_URL}sites/MLA/search?q=${search}`)
+        const getResults = await fetch(`${MELI_URL}/items/${item}`)
 
         // waiting and converting the data into a json object
         const response = await getResults.json()
-
         // check if response.results exist or lenght > 0 else return 404
-        if (response.results && response.results.length > 0) {
+        if (response) {
             res.status(200).send(response)
         } else {
-            res.status(404).send('Error, invalid search or not found')
+            res.status(404).send('Error, invalid item id or not found')
         }
 
     } catch (error) {

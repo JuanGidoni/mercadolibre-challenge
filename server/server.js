@@ -2,6 +2,7 @@ const env = require('dotenv')
 const express = require('express')
 const cors = require('cors')
 const fetch = require('node-fetch');
+const item = require('./routes/item.js')
 const search = require('./routes/search.js')
 const filter = require('./routes/filter.js')
 const categories = require('./routes/categories.js')
@@ -25,13 +26,13 @@ app.get('/v1/', async (req, res) => {
     try {
 
         // declaring getResults to await the response of the api
-        const getResults = await fetch(`${MELI_URL}/search?q=notebook`)
+        const getResults = await fetch(`${MELI_URL}sites/MLA/search?q=notebook`)
         // waiting and converting the data into a json object
         const response = await getResults.json()
 
         // check if response.results exist or lenght > 0 else return 404
         if (response.results && response.results.length > 0) {
-            res.status(200).send(response.results)
+            res.status(200).send(response)
         } else {
             res.status(404).send('Error, invalid search or not found')
         }
@@ -43,6 +44,7 @@ app.get('/v1/', async (req, res) => {
 
 })
 
+app.use("/v1/item/", item);
 app.use("/v1/search/", search);
 app.use("/v1/filter/", filter);
 app.use("/v1/categories/", categories);

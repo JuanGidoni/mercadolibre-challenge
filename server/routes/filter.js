@@ -15,18 +15,15 @@ router.get('/:filter', async (req, res) => {
         // declare filter parameter from req
         const filter = req.params.filter
 
-        // declare empty array to be filled with data after filtering
-        let itemToReturn = []
-
         // declaring getData to await the response of the api
-        const getData = await fetch(`${MELI_URL}/search?category=${filter}`)
+        const getData = await fetch(`${MELI_URL}sites/MLA/search?category=${filter}`)
         
         // waiting and converting the data into a json object
         const response = await getData.json()
         
         // check if response.results exist or lenght > 0 else return 404
         if(response.results && response.results.length > 0){ 
-            res.status(200).send(response.results)
+            res.status(200).send(response)
         }else{
             res.status(404).send('Error, item empty or not found')
         }

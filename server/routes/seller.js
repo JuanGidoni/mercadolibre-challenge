@@ -12,11 +12,11 @@ const MELI_URL = process.env.MELI_URL || process.env.BASE_URL || 'http://localho
 router.get('/:seller', async (req, res) => {
     // try catch to process data from the api
     try {
-        // declare search parameter from req
+        // declare seller parameter from req
         const sellerID = req.params.seller
 
         // declaring getResults to await the response of the api
-        const getResults = await fetch(`${MELI_URL}/search?seller_id=${sellerID}`)
+        const getResults = await fetch(`${MELI_URL}sites/MLA/search?seller_id=${sellerID}`)
 
         // waiting and converting the data into a json object
         const response = await getResults.json()
