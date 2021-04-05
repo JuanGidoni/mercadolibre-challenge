@@ -166,7 +166,7 @@ export function DataProvider({ children, ...props }) {
         })
 
         // send the user to home page using history
-        history.push("/")
+        history.push("/favorites")
 
     }
 
