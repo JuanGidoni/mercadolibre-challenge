@@ -30,6 +30,10 @@ This project includes a technical test for a job interview at MeLi
     "node-fetch": "^2.6.1"
 ```
 
+## <a name="installation-and-usage"></a>Live Preview
+
+* [Heroku Deploy](https://testmelijg.herokuapp.com/)
+
 ## <a name="installation-and-usage"></a>Installation and Usage
 
 Prerequisites: [Node.js](https://nodejs.org/) (`^14..0.0`, or `=14.16.0`) built with SSL support. (If you are using an official Node.js distribution, SSL is always built in.)
