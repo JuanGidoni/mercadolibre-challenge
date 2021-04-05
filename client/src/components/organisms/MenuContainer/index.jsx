@@ -7,7 +7,7 @@ import { useDataContext } from '../../settings/DataContext'
 
 const MenuContainer = () => {
 
-    const { setLoading, sideToggle, setSideToggle, meLiData, getResults } = useDataContext()
+    const { fav, setLoading, sideToggle, setSideToggle, meLiData, getResults } = useDataContext()
     const [inputValue, setInputValue] = useState('')
 
     return (
@@ -31,6 +31,10 @@ const MenuContainer = () => {
 
                 <div className={`sidebar-menu h-100 d-flex flex-column justify-content-center ${sideToggle === true ? 'open' : ''} d-md-none`}>
                     <Button typeBtn="withClick" clickFunction={() => setSideToggle(!sideToggle)} className="btn text-Close mb-3 text-center"> Close Menu</Button>
+                    <Link to="/favorites" className={`btn text-center text-sideMenu ${fav && fav.length > 0 ? 'fav-true' : 'fav-false'}`}>
+                        Favorites
+                    <div className="ml-1">{fav && fav.length ? fav.length : ''}</div>
+                    </Link>
                     {meLiData.header.links && meLiData.header.links.length > 0 ? meLiData.header.links.map(
                         (v, i) => <Link key={i} onClick={() => setSideToggle(!sideToggle)} to="/" className="btn text-center text-sideMenu">{v}</Link>
                     ) : 'No menu items'}

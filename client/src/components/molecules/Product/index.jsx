@@ -19,7 +19,7 @@ const Product = ({
                 <div className="box h-100 w-100">
                     <Image src={product.thumbnail} alt={product.title} className="img-fluid" testId="__test_pImgUrl" />
                 </div>
-                <div className="d-flex flex-column justify-content-center align-items-start h-100 w-100 ">
+                <div className="d-flex flex-column justify-content-center align-items-start h-100 w-100 py-3 px-2 px-md-0 py-md-0">
                     <PriceBox price={product.price} original_price={product.original_price} className="w-auto h-auto" testId="__test_pPrice" full={product.shipping.logistic_type === "fulfillment" ? true : false} />
                     <p className="small text-success" id="free-shipping">{product.shipping.free_shipping ? 'Envio Gratis' : ''}</p>
                     <div className="card-title text-muted">
