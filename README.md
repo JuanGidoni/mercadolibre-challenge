@@ -30,9 +30,9 @@ This project includes a technical test for a job interview at MeLi
     "node-fetch": "^2.6.1"
 ```
 
-## <a name="installation-and-usage"></a>Live Preview
+## <a name="installation-and-usage"></a>Live Preview (disabled)
 
-* [Heroku Deploy](https://testmelijg.herokuapp.com/)
+* "Heroku Deploy" was blocked by Heroku because the site was flagged for "pishing".
 
 ## <a name="installation-and-usage"></a>Installation and Usage
 
