@@ -45,6 +45,21 @@ Optional: [Docker Desktop](https://www.docker.com/products/docker-desktop) (`^20
 * [Frontend Readme](https://github.com/JuanGidoni/TestMeLi/tree/master/client#test-meli-frontend)
 * [Backend Readme](https://github.com/JuanGidoni/TestMeLi/tree/master/server#test-meli-backend)
 
+### Create environment
+
+* In server folder with:
+ ```
+PORT=5000
+BASE_URL=http://localhost:5000
+MELI_URL=https://api.mercadolibre.com/
+```
+
+* In client folder with:
+ ```
+REACT_APP_BACKEND_URL=http://localhost
+REACT_APP_BACKEND_PORT=5000
+```
+
 #### Using Docker (Optional):
 
 ls-> TestMeLi folder and run this command: (or git bash here if you have git installed)
