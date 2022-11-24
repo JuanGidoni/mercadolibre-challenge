@@ -7,7 +7,7 @@
 }
 
 .icon {
-  content: '\EA27';
+  content: "\EA27";
 }
 
 .line-through {
@@ -26,7 +26,7 @@
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
-  width:100%;
+  width: 100%;
   min-height: 100vh;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -43,5 +43,4 @@
   .home {
     min-height: 76.3vh;
   }
-
 }

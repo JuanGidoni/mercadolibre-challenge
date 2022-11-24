@@ -1,158 +1,156 @@
 /* MENU STYLES */
 
 .menu-meli {
+  height: 100px;
+  width: 100%;
+  border: 0;
+  position: relative;
+  background-color: #fff159;
+  -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.menu-meli-logo {
+  height: 34px;
+  width: 134px;
+  overflow: hidden;
+  display: none;
+  text-indent: -999px;
+}
+
+.menu-meli-search {
+  padding: 7px 60px 9px 15px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+  border: 0 rgba(0, 0, 0, 0.2);
+}
+
+.menu-meli-search:focus {
+  outline: 0;
+}
+
+.menu-meli-miniLogo {
+  display: block;
+  height: 34px;
+}
+
+.menu-meli-ad {
+  max-width: 340px;
+  max-height: 39px;
+  display: none;
+}
+
+.btn-menu-meli {
+  background: none;
+  outline: none;
+  border: none;
+  padding: 8px;
+}
+
+.icon-search {
+  width: 1em;
+  height: 1em;
+}
+.sidebar-menu {
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  background: rgba(251, 251, 251, 0.6);
+  box-shadow: none;
+}
+.text-sideMenu {
+  font-size: 2em !important;
+}
+.text-sideMenu:nth-of-type(odd) {
+  background: #fff159;
+  color: #333 !important;
+}
+
+.text-sideMenu:nth-of-type(even) {
+  background-color: white;
+  color: #3483fa;
+}
+.text-Close {
+  background-color: #3483fa !important;
+  color: white !important;
+}
+
+.open {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  box-shadow: 14px 0 7px -6px rgba(51, 51, 51, 0.6);
+}
+
+@media all and (min-width: 1025px) {
+  .first-menu {
+    display: flex !important;
+  }
+
+  .menu-meli-ad {
+    display: block;
+  }
+
+  .second-menu {
+    display: flex !important;
+  }
+
+  .icon {
+    content: "\EA27";
+  }
+
+  .menu-meli {
     height: 100px;
     width: 100%;
     border: 0;
     position: relative;
     background-color: #fff159;
-    -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, .1);
-    box-shadow: 0 1px 0 0 rgba(0, 0, 0, .1);
-}
+    -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+  }
 
+  .menu-meli-logo {
+    display: block;
+  }
 
-.menu-meli-logo {
-    height: 34px;
-    width: 134px;
-    overflow: hidden;
+  .menu-meli-miniLogo {
     display: none;
-    text-indent: -999px;
-}
+  }
 
-.menu-meli-search {
+  .menu-meli-search {
     padding: 7px 60px 9px 15px;
     -webkit-border-radius: 2px;
     border-radius: 2px;
     background-color: #fff;
-    border: 0 rgba(0, 0, 0, .2);
-}
+    border: 0 rgba(0, 0, 0, 0.2);
+  }
 
-.menu-meli-search:focus {
+  .menu-meli-search:focus {
     outline: 0;
-}
+  }
 
-.menu-meli-miniLogo {
-    display: block;
-    height: 34px;
-}
-
-.menu-meli-ad {
+  .menu-meli-ad {
     max-width: 340px;
     max-height: 39px;
-    display: none;
-}
+  }
 
-.btn-menu-meli {
+  .btn-menu-meli {
     background: none;
     outline: none;
     border: none;
     padding: 8px;
-}
+  }
 
-.icon-search {
+  .icon-search {
     width: 1em;
     height: 1em;
-}
-.sidebar-menu {
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    -webkit-transition: .3s ease all;
-    transition: .3s ease all;
-    background: rgba(251, 251, 251, .6);
-    box-shadow: none;
-}
-.text-sideMenu {
-    font-size:2em !important;
-}
-.text-sideMenu:nth-of-type(odd) {
- background: #fff159;
- color:#333 !important;
-}
-
-.text-sideMenu:nth-of-type(even) {
-    background-color: white;
-    color:#3483fa;
-}
-.text-Close {
-    background-color: #3483fa !important;
-    color:white !important;
-}
-
-.open {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    box-shadow: 14px 0 7px -6px rgba(51, 51, 51, .6);
-}
-
-@media all and (min-width: 1025px) {
-
-    .first-menu {
-        display: flex !important;
-    }
-
-    .menu-meli-ad {
-        display: block;
-    }
-
-    .second-menu {
-        display: flex !important;
-    }
-
-    .icon {
-        content: '\EA27';
-    }
-
-    .menu-meli {
-        height: 100px;
-        width: 100%;
-        border: 0;
-        position: relative;
-        background-color: #fff159;
-        -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, .1);
-        box-shadow: 0 1px 0 0 rgba(0, 0, 0, .1);
-    }
-
-    .menu-meli-logo {
-        display: block;
-    }
-
-    .menu-meli-miniLogo {
-        display: none;
-    }
-
-    .menu-meli-search {
-        padding: 7px 60px 9px 15px;
-        -webkit-border-radius: 2px;
-        border-radius: 2px;
-        background-color: #fff;
-        border: 0 rgba(0, 0, 0, .2);
-    }
-
-    .menu-meli-search:focus {
-        outline: 0;
-    }
-
-    .menu-meli-ad {
-        max-width: 340px;
-        max-height: 39px;
-    }
-
-    .btn-menu-meli {
-        background: none;
-        outline: none;
-        border: none;
-        padding: 8px;
-    }
-
-    .icon-search {
-        width: 1em;
-        height: 1em;
-    }
+  }
 }
